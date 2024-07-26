@@ -1,0 +1,24 @@
+{
+  "name": "cypress-aqa-cource",
+  "version": "1.0.0",
+  "description": "Cypress aqa cource",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "test:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VadimNastoyashchy/cypress-aqa-cource.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VadimNastoyashchy/cypress-aqa-cource/issues"
+  },
+  "homepage": "https://github.com/VadimNastoyashchy/cypress-aqa-cource#readme",
+  "devDependencies": {
+    "cypress": "^13.13.1"
+  }
+}
