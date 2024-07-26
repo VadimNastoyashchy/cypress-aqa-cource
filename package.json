@@ -11,8 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/VadimNastoyashchy/cypress-aqa-cource.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "test",
+    "automation",
+    "cypress",
+    "js"
+  ],
+  "author": "Yaroslav Kravchenko",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/VadimNastoyashchy/cypress-aqa-cource/issues"
