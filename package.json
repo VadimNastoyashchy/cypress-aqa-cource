@@ -1,36 +1,37 @@
 {
-  "name": "cypress-aqa-cource",
-  "version": "1.0.0",
-  "description": "Cypress aqa cource",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "cypress open",
-    "test:run": "cypress run",
-    "lint": "npx eslint",
-    "prettier": "npx prettier"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VadimNastoyashchy/cypress-aqa-cource.git"
-  },
-  "keywords": [
-    "test",
-    "automation",
-    "cypress",
-    "js"
-  ],
-  "author": "Yaroslav Kravchenko",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/VadimNastoyashchy/cypress-aqa-cource/issues"
-  },
-  "homepage": "https://github.com/VadimNastoyashchy/cypress-aqa-cource#readme",
-  "devDependencies": {
-    "@eslint/js": "^9.8.0",
-    "cypress": "^13.13.1",
-    "eslint": "^9.8.0",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "3.3.3"
-  }
+    "name": "cypress-aqa-cource",
+    "version": "1.0.0",
+    "description": "Cypress aqa cource",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "cypress open",
+        "test:run": "cypress run",
+        "lint": "npx eslint",
+        "prettier:check": "npx prettier . --check",
+        "prettier:write": "npx prettier . --write"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VadimNastoyashchy/cypress-aqa-cource.git"
+    },
+    "keywords": [
+        "test",
+        "automation",
+        "cypress",
+        "js"
+    ],
+    "author": "Yaroslav Kravchenko",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/VadimNastoyashchy/cypress-aqa-cource/issues"
+    },
+    "homepage": "https://github.com/VadimNastoyashchy/cypress-aqa-cource#readme",
+    "devDependencies": {
+        "@eslint/js": "^9.8.0",
+        "cypress": "^13.13.1",
+        "eslint": "^9.8.0",
+        "eslint-config-prettier": "^9.1.0",
+        "prettier": "3.3.3"
+    }
 }
