@@ -18,7 +18,7 @@ To set up the Cypress testing environment for this project, follow these steps:
 
    Clone the project repository to your local machine using the following command:
 
-   git clone https://github.com/VadimNastoyashchy/cypress-aqa-cource
+   `git clone https://github.com/VadimNastoyashchy/cypress-aqa-cource`
 
 2. **Navigate to the Project Directory**
 
@@ -28,19 +28,19 @@ To set up the Cypress testing environment for this project, follow these steps:
 
     Ensure you have Node.js installed on your system. Then, install the necessary dependencies by running:
 
-    npm install
+    `npm install`
 
 4. **Install Cypress**
 
     If Cypress is not already installed globally, you can install it using the command:
 
-    npm install cypress --save-dev
+    `npm install cypress --save-dev`
 
 5. **Open Cypress**
 
     Once all dependencies are installed, open Cypress using:
 
-    npm run test
+    `npm run test`
 
     This command will open the Cypress Test Runner, allowing you to select and run tests.
 
@@ -52,17 +52,35 @@ To execute the test cases in the Cypress project, follow these instructions:
 
     Open Cypress in interactive mode using:
 
-    npm run test
+    `npm run test`
 
     Choose a browser of your preference (Chrome, Edge, or Firefox).
 
     Click on any test from the list to execute it.
 
-2. **Run Tests in Headless Mode**
+2. **Run Linting and Formatting Checks**
+
+    Ensure your code adheres to set standards before running tests:
+
+    To run Eslint: `npm run lint`
+
+    To check formatting with Prettier: `npm run prettier:check`
+
+    To auto-format files with Prettier: `npm run prettier:write`
+
+3. **Run Tests in Headless Mode**
 
     You can also run tests directly in the terminal without a GUI, which is faster and useful for CI/CD pipelines:
 
-    npm run test:run
+    `npm run test:run`
+
+4. **Run Tests Manually**
+
+    To run tests manually, you can do it straight in the GitHub Actions:
+
+    1. Open "Actions" tab
+    2. In the sidemenu choose "Manual run" workflow
+    3. Click on the "Run workflow" and choose the appropriate branch
 
 
 ## Contributors
