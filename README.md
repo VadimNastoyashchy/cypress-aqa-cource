@@ -6,7 +6,7 @@ Cypress aqa cource
 
 ## About the Tool
 
-This project is a test automation suite developed using [Cypress](https://www.cypress.io/) for the [Demoblaze](https://www.demoblaze.com/) website. The tool is designed to automate the testing of various functionalities on the Demoblaze platform, ensuring a smooth and error-free user experience. 
+This project is a test automation suite developed using [Cypress](https://www.cypress.io/) for the [Demoblaze](https://www.demoblaze.com/) website. The tool is designed to automate the testing of various functionalities on the Demoblaze platform, ensuring a smooth and error-free user experience.
 
 Cypress is a JavaScript-based end-to-end testing framework that allows for writing robust and reliable tests. It is highly efficient in handling web applications, providing fast and easy testing with built-in features for time travel, debugging, and real-time reloading.
 
@@ -16,9 +16,9 @@ To set up the Cypress testing environment for this project, follow these steps:
 
 1. **Clone the Repository**
 
-   Clone the project repository to your local machine using the following command:
+    Clone the project repository to your local machine using the following command:
 
-   `git clone https://github.com/VadimNastoyashchy/cypress-aqa-cource`
+    `git clone https://github.com/VadimNastoyashchy/cypress-aqa-cource`
 
 2. **Navigate to the Project Directory**
 
@@ -77,13 +77,10 @@ To execute the test cases in the Cypress project, follow these instructions:
 4. **Run Tests Manually**
 
     To run tests manually, you can do it straight in the GitHub Actions:
-   
-    Open "Actions" tab
-   
-    In the sidemenu choose "Manual run" workflow
-   
-    Click on the "Run workflow" and choose the appropriate branch
 
+    - Open "Actions" tab
+    - In the sidemenu choose "Manual run" workflow
+    - Click on the "Run workflow" and choose the appropriate branch
 
 ## Contributors
 
