@@ -78,9 +78,9 @@ To execute the test cases in the Cypress project, follow these instructions:
 
     To run tests manually, you can do it straight in the GitHub Actions:
 
-    1. Open "Actions" tab
-    2. In the sidemenu choose "Manual run" workflow
-    3. Click on the "Run workflow" and choose the appropriate branch
+    * Open "Actions" tab
+    * In the sidemenu choose "Manual run" workflow
+    * Click on the "Run workflow" and choose the appropriate branch
 
 
 ## Contributors
