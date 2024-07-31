@@ -1,14 +1,15 @@
 /*global describe, it*/
 import HomePage from '../src/pages/HomePage'
+import Accounts from '../src/accounts/Accounts'
 
-describe('Login and Logout tests', () => {
-    it('Login and Logout first user in page', () => {
+describe('Login test', () => {
+    it('Login user in home page', () => {
         const homePage = new HomePage()
-
+        const account = new Accounts()
         homePage.visit().checkPageUrl().header.clickOnLogInButton()
 
         homePage.logInModal
-            .logInWithCredentials('testUser3444', 'testUser3444')
-            .header.checkUserName('testUser3444')
+            .logInWithCredentials(account.userName, account.userPassword)
+            .header.checkUserName(account.userName)
     })
 })
