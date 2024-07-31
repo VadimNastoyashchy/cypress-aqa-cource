@@ -1,24 +1,14 @@
-/*global describe, it, cy*/
-describe('Login test', () => {
-    it('Login user in home page', () => {
-        const homePage = 'https://www.demoblaze.com/index.html'
-        const testUserName = 'testUser3444'
-        const testUserPassword = testUserName
-        const checkLocation = (url) =>
-            cy.location('href').should('include', url)
+/*global describe, it*/
+import HomePage from '../src/pages/HomePage'
 
-        cy.visit(homePage)
+describe('Login and Logout tests', () => {
+    it('Login and Logout first user in page', () => {
+        const homePage = new HomePage()
 
-        checkLocation(homePage)
+        homePage.visit().checkPageUrl().header.clickOnLogInButton()
 
-        cy.get('#login2').click()
-
-        cy.get('#loginusername').type(testUserName, { force: true })
-
-        cy.get('#loginpassword').type(testUserPassword, { force: true })
-
-        cy.get('.btn-primary').contains('Log in').click()
-
-        cy.get('#nameofuser').should('have.text', `Welcome ${testUserName}`)
+        homePage.logInModal
+            .logInWithCredentials('testUser3444', 'testUser3444')
+            .header.checkUserName('testUser3444')
     })
 })
