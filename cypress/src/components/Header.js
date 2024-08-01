@@ -8,12 +8,8 @@ export default class Header {
         return cy.get('#logout2')
     }
 
-    get userNameInHeader() {
+    get userName() {
         return cy.get('#nameofuser')
-    }
-
-    get headerButton() {
-        return cy.get('.nav-link')
     }
 
     clickOnLogInButton() {
@@ -26,8 +22,8 @@ export default class Header {
         return this
     }
 
-    checkUserName(userName) {
-        this.userNameInHeader.should('have.text', `Welcome ${userName}`)
+    checkUserName(name) {
+        this.userName.should('have.text', `Welcome ${name}`)
         return this
     }
 }

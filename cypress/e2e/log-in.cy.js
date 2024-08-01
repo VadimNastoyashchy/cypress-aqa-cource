@@ -1,14 +1,13 @@
 /*global describe, it*/
-import HomePage from '../src/pages/HomePage'
+import { homePage } from '../src/pages'
 import { getUserName, getUserPassword } from '../src/userService'
 
 describe('Login test', () => {
     it('Login user in home page', () => {
-        const homePage = new HomePage()
         homePage.visit().checkPageUrl().header.clickOnLogInButton()
 
         homePage.logInModal
-            .logInWithCredentials(getUserName(), getUserPassword())
+            .logInWithCredentials(getUserName(), getUserPassword(), homePage)
             .header.checkUserName(getUserName())
     })
 })
