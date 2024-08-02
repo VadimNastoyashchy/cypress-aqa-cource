@@ -1,16 +1,17 @@
 /*globals cy*/
 import BaseModal from './BaseModal'
+
 export default class LogInModal extends BaseModal {
     constructor() {
         super('.modal-dialog')
     }
 
     get inputUserNameField() {
-        return cy.get(`${this.MODAL_BODY_CONTAINER} #loginusername`)
+        return cy.get(`${this.body.BODY_CONTAINER} #loginusername`)
     }
 
     get inputPasswordField() {
-        return cy.get(`${this.MODAL_BODY_CONTAINER} #loginpassword`)
+        return cy.get(`${this.body.BODY_CONTAINER} #loginpassword`)
     }
 
     enterEmail(userName) {
@@ -30,7 +31,7 @@ export default class LogInModal extends BaseModal {
     }
 
     clickOnLogInButton() {
-        this.modalFooterButton.contains('Log in').click()
+        this.footer.modalFooterButton.contains('Log in').click()
     }
 
     logInWithCredentials(username, password, homePage) {
@@ -39,7 +40,7 @@ export default class LogInModal extends BaseModal {
     }
 
     checkFooterLogInButton(textButton) {
-        this.modalFooterButton.contains(textButton).should('be.visible')
+        this.footer.modalFooterButton.contains(textButton).should('be.visible')
         return this
     }
 }

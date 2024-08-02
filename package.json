@@ -21,7 +21,7 @@
         "cypress",
         "js"
     ],
-    "author": "Yaroslav Kravchenko",
+    "author": "Yaroslav Kravchenko, Maryna Mala",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/VadimNastoyashchy/cypress-aqa-cource/issues"
