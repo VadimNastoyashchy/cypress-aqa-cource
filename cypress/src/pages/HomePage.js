@@ -1,8 +1,12 @@
 import BasePage from '../base/BasePage'
-export default class HomePage extends BasePage {
-    constructor(header, logInModal) {
+import { loginModal } from '../modals/LogInModal'
+
+class HomePage extends BasePage {
+    loginModal = loginModal
+    
+    constructor() {
         super('index.html')
-        this.header = header
-        this.logInModal = logInModal
     }
 }
+
+export const homePage = new HomePage()

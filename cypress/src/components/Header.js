@@ -1,5 +1,8 @@
 /*global cy*/
-export default class Header {
+
+import { homePage } from "../pages"
+
+class Header {
     get logInButton() {
         return cy.get('#login2')
     }
@@ -14,7 +17,7 @@ export default class Header {
 
     clickOnLogInButton() {
         this.logInButton.contains('Log in').click()
-        return this
+        return homePage
     }
 
     clickOnLogOutButton() {
@@ -27,3 +30,5 @@ export default class Header {
         return this
     }
 }
+
+export const header = new Header()

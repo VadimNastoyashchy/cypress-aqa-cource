@@ -1,6 +1,10 @@
 /*global cy, Cypress*/
 
+import { header } from '../components/Header'
+
 export default class BasePage {
+    header = header
+    
     constructor(pageUrl = '') {
         this.PAGE_URL = pageUrl
     }

@@ -1,7 +1,8 @@
 /*globals cy*/
+import { homePage } from '../pages'
 import BaseModal from './BaseModal'
 
-export default class LogInModal extends BaseModal {
+class LogInModal extends BaseModal {
     constructor() {
         super('.modal-dialog')
     }
@@ -34,7 +35,7 @@ export default class LogInModal extends BaseModal {
         this.footer.modalFooterButton.contains('Log in').click()
     }
 
-    logInWithCredentials(username, password, homePage) {
+    logInWithCredentials(username, password) {
         this.enterEmail(username).enterPassword(password).clickOnLogInButton()
         return homePage
     }
@@ -44,3 +45,5 @@ export default class LogInModal extends BaseModal {
         return this
     }
 }
+
+export const loginModal = new LogInModal()
