@@ -1,4 +1,4 @@
-import BasePage from '../base/BasePage'
+import BasePage from '../pages/base/BasePage.js'
 import { loginModal } from '../modals/LogInModal'
 
 class HomePage extends BasePage {
