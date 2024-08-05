@@ -12,7 +12,7 @@
 //
 //
 import { homePage } from '../src/pages/HomePage.js'
-import { getUserName, getUserPassword } from '../src/userService.js'
+import { getUserName, getUserPassword } from '../src/services/userService.js'
 
 Cypress.Commands.add('loginWithValidCredentials', () => {
     homePage
