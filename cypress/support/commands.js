@@ -9,8 +9,17 @@
 // ***********************************************
 //
 //
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+import { homePage } from '../src/pages/HomePage.js'
+import { getUserName, getUserPassword } from '../src/userService.js'
+
+Cypress.Commands.add('loginWithValidCredentials', () => {
+    homePage
+        .visit()
+        .checkPageUrl()
+        .header.clickOnLogInButton()
+        .loginModal.logInWithCredentials(getUserName(), getUserPassword())
+        .header.checkUserName(getUserName());
+});
 //
 //
 // -- This is a child command --
