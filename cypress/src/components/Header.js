@@ -15,6 +15,10 @@ class Header {
         return cy.get('#nameofuser')
     }
 
+    get cartButton() {
+        return cy.get('#cartur')
+    }
+
     clickOnLogInButton() {
         this.logInButton.contains('Log in').click()
         return homePage
@@ -28,6 +32,10 @@ class Header {
     checkUserName(name) {
         this.userName.should('have.text', `Welcome ${name}`)
         return this
+    }
+
+    clickCartButton() {
+        this.cartButton.contains('Cart').click()
     }
 }
 
