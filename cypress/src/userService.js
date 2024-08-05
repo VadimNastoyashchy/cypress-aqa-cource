@@ -13,5 +13,5 @@ export const buildUserName = () => {
 }
 
 export const buildUserPassword = () => {
-    return `testUser${Math.floor(Date.now() / 1000)}`
+    return buildUserName()
 }
