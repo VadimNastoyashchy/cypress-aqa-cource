@@ -1,6 +1,6 @@
 /*global cy, Cypress*/
 
-import { header } from '../components/Header'
+import { header } from '../../components/Header'
 
 export default class BasePage {
     header = header
