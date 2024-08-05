@@ -7,3 +7,11 @@ export const getUserName = () => {
 export const getUserPassword = () => {
     return Cypress.env('USER_PASSWORD') || ''
 }
+
+export const buildUserName = () => {
+    return `testUser${Math.floor(Date.now() / 1000)}`
+}
+
+export const buildUserPassword = () => {
+    return `testUser${Math.floor(Date.now() / 1000)}`
+}
