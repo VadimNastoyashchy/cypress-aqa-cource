@@ -1,12 +1,12 @@
-import BasePage from "./base/BasePage";
-import { cartContent } from "../components/CartContent";
+import BasePage from './base/BasePage'
+import { cartContent } from '../components/CartContent'
 
 class CartPage extends BasePage {
-    cartContent;
+    cartContent
     constructor() {
-        super('/cart.html');
-        this.cartContent = cartContent;
+        super('/cart.html')
+        this.cartContent = cartContent
     }
 }
 
-export const cartPage = new CartPage();
+export const cartPage = new CartPage()

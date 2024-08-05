@@ -1,8 +1,8 @@
+/*globals cy*/
 class ProductDescription {
-
     clickAddToCartButton() {
-        cy.get(".btn-success").contains('Add to cart').click()
+        cy.get('.btn-success').contains('Add to cart').click()
     }
 }
 
-export const productDescription = new ProductDescription();
+export const productDescription = new ProductDescription()

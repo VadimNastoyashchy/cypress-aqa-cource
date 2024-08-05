@@ -18,7 +18,7 @@ class Header {
     get cartButton() {
         return cy.get('#cartur')
     }
-  
+
     get signUpButton() {
         return cy.get('#signin2')
     }

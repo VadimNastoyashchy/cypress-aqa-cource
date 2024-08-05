@@ -1,8 +1,8 @@
+/*globals cy*/
 class CartContent {
-
     productIsVisible() {
         cy.get('#tbodyid').should('exist')
     }
 }
 
-export const cartContent = new CartContent();
+export const cartContent = new CartContent()
