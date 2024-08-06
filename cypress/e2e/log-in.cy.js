@@ -1,5 +1,5 @@
 /*global describe, it*/
-import { homePage } from '../src/pages'
+import { homePage } from '../src/pages/HomePage'
 import { getUserName, getUserPassword } from '../src/services/userService'
 
 describe('Login test', () => {

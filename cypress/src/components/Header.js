@@ -1,6 +1,6 @@
 /*global cy*/
 
-import { homePage } from '../pages'
+import { homePage } from '../pages/HomePage'
 
 class Header {
     get logInButton() {

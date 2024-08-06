@@ -1,5 +1,5 @@
 /*global describe, it, cy*/
-import { homePage } from '../src/pages'
+import { homePage } from '../src/pages/HomePage'
 import { productPage } from '../src/pages/ProductPage'
 import { cartPage } from '../src/pages/CartPage'
 import { getProductName } from '../src/services/productService.js'
