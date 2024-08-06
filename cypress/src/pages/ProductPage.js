@@ -1,10 +1,10 @@
-import BasePage from './base/BasePage'
-import { productDescription } from '../components/ProductDescription'
+import BasePage from './base/BasePage.js'
+import { productDescription } from '../components/ProductDescription.js'
 
 class ProductPage extends BasePage {
+    productDescription = productDescription
     constructor() {
-        super('/prod.html?idp_=1')
-        this.productDescription = productDescription
+        super('#tbodyid')
     }
 }
 

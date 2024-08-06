@@ -1,7 +1,7 @@
 /*globals cy*/
 class CartContent {
     productIsVisible() {
-        cy.get('#tbodyid').should('exist')
+        cy.get('#tbodyid .success').should('be.visible')
     }
 }
 

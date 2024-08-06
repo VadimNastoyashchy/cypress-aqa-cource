@@ -1,7 +1,8 @@
 /*globals cy*/
 class ProductCard {
-    clickOnProductByName(productName) {
-        cy.get('.col-lg-9').contains(productName).click()
+    clickOnProductByName() {
+        cy.get('a[href*="prod.html"]').should('be.visible');
+        cy.get('.card-title a').first().click()
     }
 }
 
