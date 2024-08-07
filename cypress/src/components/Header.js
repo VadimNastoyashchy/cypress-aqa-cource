@@ -1,6 +1,6 @@
 /*global cy*/
 
-import { homePage } from '../pages'
+import { homePage } from '../pages/HomePage'
 
 class Header {
     get logInButton() {
@@ -13,6 +13,10 @@ class Header {
 
     get userName() {
         return cy.get('#nameofuser')
+    }
+
+    get cartButton() {
+        return cy.get('#cartur')
     }
 
     get signUpButton() {
@@ -37,6 +41,10 @@ class Header {
     checkUserName(name) {
         this.userName.should('have.text', `Welcome ${name}`)
         return this
+    }
+
+    clickCartButton() {
+        this.cartButton.contains('Cart').click()
     }
 }
 

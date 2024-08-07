@@ -1,6 +1,6 @@
 /*global describe, it*/
-import { homePage } from '../src/pages'
-import { getUserName, getUserPassword } from '../src/userService'
+import { homePage } from '../src/pages/HomePage'
+import { getUserName, getUserPassword } from '../src/services/userService'
 
 describe('Login test', () => {
     it('Login user with valid credentials', () => {

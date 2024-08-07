@@ -1,5 +1,5 @@
 /*globals cy*/
-import { homePage } from '../pages'
+import { homePage } from '../pages/HomePage'
 import BaseModal from './base/BaseModal'
 
 class LogInModal extends BaseModal {

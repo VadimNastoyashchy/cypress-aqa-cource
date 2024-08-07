@@ -1,5 +1,5 @@
 /*globals cy, expect*/
-import { homePage } from '../pages'
+import { homePage } from '../pages/HomePage'
 import BaseModal from './base/BaseModal'
 
 class SignUpModal extends BaseModal {

@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -9,8 +11,17 @@
 // ***********************************************
 //
 //
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+import { homePage } from '../src/pages/HomePage.js'
+import { getUserName, getUserPassword } from '../src/services/userService.js'
+
+Cypress.Commands.add('loginWithValidCredentials', () => {
+    homePage
+        .visit()
+        .checkPageUrl()
+        .header.clickOnLogInButton()
+        .loginModal.logInWithCredentials(getUserName(), getUserPassword())
+        .header.checkUserName(getUserName())
+})
 //
 //
 // -- This is a child command --
