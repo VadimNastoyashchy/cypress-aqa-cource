@@ -2,10 +2,15 @@
 import { homePage } from '../src/pages/HomePage'
 
 describe('Footer test', () => {
-    it("Check footer's components visible on the page", () => {
+    it("Check footer's components visible on the page", () => { //homepage
         homePage
-        .visit()
-        .checkPageUrl()
-        .footer.checkFooterVisibility()
+            .visit()
+            .checkPageUrl()
+        .footer
+            .scrollToFooter()
+            .checkAboutUs()
+            .checkGetInTouch()
+            .checkLogoVisibility()
+            .checkCopyrightVisibility()
     })
 })

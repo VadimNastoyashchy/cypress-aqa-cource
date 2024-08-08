@@ -2,12 +2,12 @@
 class Footer {
     constructor() {
         this.footerContent = '#fotcont'
+        this.copyrightFooter = 'footer'
     }
 
     scrollToFooter() {
         cy.get(this.footerContent)
         .scrollIntoView()
-        .should('be.visible')
         return this
     }
 
@@ -26,7 +26,7 @@ class Footer {
 
     checkGetInTouch() {
         const details = ['Get in Touch', 'Address', 'Phone', 'Email'];
-        for (let detail of details) {
+        for (const detail of details) { 
             this.checkVisibilityOfText(detail);
         }
         return this;
@@ -39,18 +39,10 @@ class Footer {
     }
 
     checkCopyrightVisibility() {
-        cy.get('footer')
+        cy.get(this.copyrightFooter) 
         .contains('Copyright © Product Store 2017')
         .should('be.visible');
         return this
-    }
-
-    checkFooterVisibility() {
-        this.scrollToFooter()
-            .checkAboutUs()
-            .checkGetInTouch()
-            .checkLogoVisibility()
-            .checkCopyrightVisibility()
     }
 }
 
