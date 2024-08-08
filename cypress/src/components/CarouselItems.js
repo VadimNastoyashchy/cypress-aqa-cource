@@ -17,14 +17,6 @@ class CarouselItems {
         .click()
         return this
     }
-
-    checkCarouselItems() {
-        this.checkCarouselIsVisible('First slide')
-            .clickOnArrowButton()
-            .checkCarouselIsVisible('Second slide')
-            .clickOnArrowButton()
-            .checkCarouselIsVisible('Third slide')
-    }
 }
 
 export const carouselItems = new CarouselItems()
