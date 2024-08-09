@@ -13,6 +13,8 @@
 //
 import { homePage } from '../src/pages/HomePage.js'
 import { getUserName, getUserPassword } from '../src/services/userService.js'
+import { productPage } from '../src/pages/ProductPage.js'
+import { cartPage } from '../src/pages/CartPage.js'
 
 Cypress.Commands.add('loginWithValidCredentials', () => {
     homePage
@@ -22,6 +24,14 @@ Cypress.Commands.add('loginWithValidCredentials', () => {
         .loginModal.logInWithCredentials(getUserName(), getUserPassword())
         .header.checkUserName(getUserName())
 })
+
+Cypress.Commands.add('addProductToCart', () => {
+    homePage.productCard.clickOnProductByName()
+    productPage.productDescription.clickAddToCartButton()
+    homePage.header.clickCartButton()
+    cartPage.cartContent.productIsVisible()
+})
+
 //
 //
 // -- This is a child command --
